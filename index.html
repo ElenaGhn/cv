@@ -20,12 +20,12 @@
     />
   </head>
 
-  <body class="container bg-light" id="contactPage">
+  <body class="ps-2 p-md-5 bg-light" id="contactPage">
     <!--Header-->
 
     <header>
-      <div class="mb-5">
-      <nav class="navbar fixed-top bg-body-secondary">
+      <div class="mb-5 d-none d-md-block">
+      <nav class="navbar navbar-light fixed-top" style="background-color: #cfe2ff;">
         <button
           class="navbar-toggler mx-4"
           type="button"
@@ -76,13 +76,13 @@
                   >SOFT SKILLS</a
                 >
               </li>
-              <a class="btn btn-outline-link" href="#" role="button"
+              <a class="btn btn-outline-link" href="assets/Lebenslauf_Elena.pdf" target="_blank"
                 >Pdf Download</a
               >
             </ul>
           </div>
         </div>
-        <a class="btn btn-outline-secondary mx-4" href="#" role="button"
+        <a class="btn btn-outline-secondary mx-4" href="assets/Lebenslauf_Elena.pdf" target="_blank"
           >Pdf Download</a
         >
         </div>
@@ -92,34 +92,33 @@
     <div class="row">
       <!--aside section-->
 
-      <aside class="col-6 col-lg-3 text-wrap h6 text-secondary">
+      <aside class="d-none d-md-block col-md-6 col-lg-3 text-wrap h6 text-secondary">
       <img
           src="assets/Profil-CVfoto.jpg"
-          class="d-none d-lg-block rounded float-start mb-5 mt-4"
+          class="rounded img-fluid img-thumbnail mb-5 mt-4"
           alt="Profil-CVfoto"
-          style="width: 100%"
-          height="auto"
+          style="height: 200px;"
         />
-        <h5 class="text-dark text-center">Contact</h5><br>
-        <p class="bi bi-geo-fill"> &nbsp;Reumannplatz 1/12</p>
+        <h5 class="text-dark">Contact</h5><br>
+        <p class="bi bi-geo-fill"> &nbsp;Reumannplatz 1/12 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1100, Vienna</p>
 
         <a
           href="tel:+436705532234"
-          class="bi-phone text-secondary">
+          class="bi-phone text-primary text-decoration-none"> &nbsp;
         +43 670 553 22 34</a>
         <br />
          <br />
         <a
           href="mailto:ellieghn@gmail.com"
-          class="bi bi-envelope-at text-secondary"
-          > ellieghn@gmail.com</a>
+          class="bi bi-envelope-at text-primary text-decoration-none"
+          >  &nbsp; ellieghn@gmail.com</a>
         <br />
          <br />
         <p class="">Born: 14.07.1998</p>
-        <p>Nationality: RO</p>
+        <p>Nationality: Romanian</p>
         <br>
        <div>
-        <h5 class="text-dark text-center mb-4">Languages</h5>
+        <h5 class="text-dark mb-4">Languages</h5>
         <ul class="list-unstyled">
           <li>Romanian: Mother tongue</li>
           <li>German: B2</li>
@@ -129,10 +128,49 @@
        </div>
       </aside>
       <!--main section-->
-      <main class="col-6 col-lg-9">
+      <main class="col-md-6 col-lg-9">
         <h1 class="text-center mt-5"> <strong>Elena Ghencea</strong></h1>
-        <h5 class="text-center text-muted mt-5">Junior Software Dev. (Learning in Progress)</h5>
+        <h5 class="text-center text-secondary mt-5">Junior Software Developer</h5>
+        <h5 class="text-center text-secondary">(Learning in Progress)</h5>
         <br>
+        <!--responsive contact-->
+
+        <div class="d-block d-md-none ps-2 mb-3">
+        <div class="text-center mb-3">
+          <a class="btn btn-outline-secondary mx-4" href="assets/Lebenslauf_Elena.pdf" target="_blank">Pdf Download</a>
+        </div>
+        <hr />
+        <div class="">
+          <h5 class="text-dark text-center mb-4">Contact</h5>
+          <p class=" bi bi-geo-fill"> &nbsp;Reumannplatz 1/12 1100, Vienna</p>
+
+            <p>  <a
+              href="tel:+436705532234"
+              class="bi-phone text-primary text-decoration-none"> &nbsp;+43 670 553 22 34</a></p>
+            <p>            <a
+              href="mailto:ellieghn@gmail.com"
+              class="bi bi-envelope-at text-primary text-decoration-none">&nbsp; ellieghn@gmail.com
+            </a></p>
+
+          <p class="">Born: 14.07.1998</p>
+          <p>Nationality: Romanian</p>
+        </div>
+<hr />
+        <div>
+          <div class="">
+            <h5 class="text-dark text-center mb-4">Languages</h5>
+            <ul class="list-group ms-4">
+              <li>Romanian: Mother tongue</li>
+              <li>German: B2</li>
+              <li>English: B1</li>
+              <li>Russian: B1</li>
+            </ul>
+            </div>
+        </div>
+      </div>
+
+      <!--acordion-->
+
       <div class="accordion" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
@@ -158,7 +196,7 @@ Inside the Fourchette supermarket in Cahul in the restaurant area</p>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <p><strong>12.2022:</strong> Java Script Basic Course</p>
+        <p><strong>12.2022:</strong> JavaScript Basic Course (Code Factory Vienna)</p>
         <p><strong>2015-2016:</strong> Trained as a cook in Cahul, Moldova</p>
         <p><strong>2007-2015:</strong> Elementary and secondary school in Colibasi, Moldova</p>
 
@@ -186,10 +224,10 @@ Inside the Fourchette supermarket in Cahul in the restaurant area</p>
     <h2 class="accordion-header" id="headingFour">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" 
       aria-expanded="false" aria-controls="collapseFour">
-        HOBBY'S
+        HOBBIES
       </button>
     </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <p>Taking care of Animals</p>
         <p>Reading (Literature in German, English)</p>
@@ -197,7 +235,7 @@ Inside the Fourchette supermarket in Cahul in the restaurant area</p>
         <p>Learning how to code</p>
         <p>Board Games</p>
         <p>To sew</p>
-        <p>Sport</p>
+        <p>Travel</p>
       </div>
     </div>
   </div>
