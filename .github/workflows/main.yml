@@ -33,4 +33,4 @@ jobs:
           key: ${{ secrets.SERVER_KEY }}
           source: "*.css,*.js,*.html,*.pdf"
           target: "/var/www/vhosts/ngdevs.net/httpdocs/elena/"
-          overwrite: true
+          rm: true
