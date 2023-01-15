@@ -1,196 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1"/>
+      content="width=device-width, initial-scale=1"
+    />
     <title>Elena's CV</title>
     <link href="style.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"/>
-      <link
+      crossorigin="anonymous"
+    />
+    <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
   </head>
 
-
-  <body class="ps-2 p-md-5 bg-light" id="homeMyCvMainPage">
+  <body class="p-md-5 bg-light" id="homeMyCvMainPage">
     <!--Header-->
 
     <header>
-     <div class="mb-5 d-none d-md-block">
-      <nav class="navbar navbar-light fixed-top" style="background-color: #cfe2ff;">
-        <button class="navbar-toggler mx-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span></button>
-         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-           <div class="offcanvas-header">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-           </div>
-            <div class="offcanvas-body">
-             <ul  class="navbar-nav justify-content-end flex-grow-1 pe-3">
-               <li class="nav-item"><a class="nav-link active" aria-current="page" href="#homeMyCvMainPage">HOME / MY CV</a></li>
-               <li class="nav-item"><a class="nav-link" href="#programmingSkilssHeading">PROGRAMMING SKILLS</a></li>
-               <li class="nav-item"><a class="nav-link" href="#professionalExperienceHeading">PROFESSIONAL EXPERIENCE</a></li>
-               <li class="nav-item"><a class="nav-link" href="#headingeducationalBackgroundHeading">EDUCATIONAL BACKGROUND</a></li>
-               <li class="nav-item"><a class="nav-link" href="#softSkillsHeading">SOFT SKILLS</a></li>
-               <li class="nav-item"><a class="nav-link" href="#hobbiesHeading">HOBBIES</a></li>
-                <a class="btn btn-outline-secondary" href="assets/Lebenslauf_Elena.pdf" target="_blank">Pdf Download</a>
-             </ul>
+      <div class="mb-5 d-none d-md-block">
+        <nav
+          class="navbar navbar-light fixed-top"
+          style="background-color: #cfe2ff"
+        >
+          <button
+            class="navbar-toggler mx-4"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
-         </div>
-         <div class="d-flex">
-            <button class="btn btn-outline- text-dark">Why Coding?</button>
-             <a class="btn btn-outline-secondary mx-4 "  href="assets/Lebenslauf_Elena.pdf" target="_blank">Pdf Download</a>
-         </div>
-      </nav>
-     </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#homeMyCvMainPage"
+                    >HOME / MY CV</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#programmingSkilssCollapse"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#programmingSkillsContent"
+                    aria-expanded="true"
+                    aria-controls="programmingSkillsContent"
+                    >PROGRAMMING SKILLS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#professionalExperienceCollapse"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#professionalExperienceContent"
+                    aria-expanded="false"
+                    aria-controls="professionalExperienceContent"
+                    >PROFESSIONAL EXPERIENCE</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#educationalBackgroundCollapse"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#educationalBackgroundContent"
+                    aria-expanded="false"
+                    aria-controls="educationalBackgroundContent"
+                    >EDUCATIONAL BACKGROUND</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#softSkillsCollapse"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#softSkillsContent"
+                    aria-expanded="false"
+                    aria-controls="softSkillsContent"
+                    >SOFT SKILLS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#hobbiesCollapse"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hobbiesContent"
+                    aria-expanded="false"
+                    aria-controls="hobbiesContent"
+                    >HOBBIES</a
+                  >
+                </li>
+                <a
+                  class="btn btn-outline-secondary"
+                  href="assets/Lebenslauf_Elena.pdf"
+                  target="_blank"
+                  >Pdf Download</a
+                >
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Why Coding?
+            </button>
+
+            <a
+              class="btn btn-outline-secondary mx-4"
+              href="assets/Lebenslauf_Elena.pdf"
+              target="_blank"
+              >Pdf Download</a
+            >
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <div class="row">
- <!--aside section-->
-    <aside class="d-none d-md-block col-md-6 col-lg-3 text-wrap h6 text-secondary">
-      <img src="assets/Profil-CVfoto.jpg" class="rounded img-fluid img-thumbnail mb-5 mt-4" alt="Profil-CVfoto" style="height: 200px;"/>
-        <h5 class="text-center text-dark">Contact</h5>
-          <p class="bi bi-geo-fill"> &nbsp;Reumannplatz 1/12 1100, Vienna</p>
-          <p><a href="tel:+436705532234" class="bi bi-phone text-primary text-decoration-none"> &nbsp;+43 670 553 22 34</a></p>
-          <p><a href="mailto:ellieghn@gmail.com" class="bi bi-envelope-at text-primary text-decoration-none"> &nbsp;ellieghn@gmail.com</a></p>
-          <p><a href="https://github.com/ElenaGhn?tab=repositories" class="bi bi-github  text-primary text-decoration-none" target="_blank"> &nbsp;Github repositories</a></p>
+    <div class="container card p-5">
+      <div class="row">
+        <!--aside section-->
+        <aside
+          class="d-none d-md-block col-md-6 col-lg-3 text-wrap h6 text-secondary"
+        >
+          <img
+            src="assets/Profil-CVfoto.jpg"
+            class="rounded img-fluid img-thumbnail mb-5 mt-4"
+            alt="Profil-CVfoto"
+            style="height: 200px"
+          />
+          <h5 class="text-center text-dark">Contact</h5>
+          <p class="bi bi-geo-fill">
+            &nbsp;Reumannplatz 1/12 1100, Vienna
+          </p>
+          <p>
+            <a
+              href="tel:+436705532234"
+              class="bi bi-phone text-primary text-decoration-none"
+            >
+              &nbsp;+43 670 553 22 34</a
+            >
+          </p>
+          <p>
+            <a
+              href="mailto:ellieghn@gmail.com"
+              class="bi bi-envelope-at text-primary text-decoration-none"
+            >
+              &nbsp;ellieghn@gmail.com</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://github.com/ElenaGhn?tab=repositories"
+              class="bi bi-github text-primary text-decoration-none"
+              target="_blank"
+            >
+              &nbsp;Github repositories</a
+            >
+          </p>
           <p>Born: 14.07.1998</p>
           <p>Nationality: Romanian</p>
-       <div>
-         <h5 class="text-dark mb-4">Languages</h5>
-          <ul class="list-unstyled">
-             <li>Romanian: Mother tongue</li>
-             <li>German: B2</li>
-             <li>English: B1</li>
-             <li>Russian: B1</li>
-          </ul>
-       </div>
-    </aside>
- <!--main section-->
-    <main class="col-md-6 col-lg-9">
-        <h1 class="text-center mt-5"> <strong>Elena Ghencea</strong></h1>
-         <h5 class="text-center text-secondary mt-5">Junior Software Developer</h5>
-         <h5 class="text-center text-secondary mb-4">(Learning in Progress)</h5>
- <!--responsive contact-->
-        <div class="d-block d-md-none ps-2 mb-3">
-         <div class="text-center mb-3">
-           <a class="btn btn-outline-secondary mx-2" href="assets/Lebenslauf_Elena.pdf" target="_blank">Pdf Download</a>
-            <button class="btn btn-outline-info text-dark mx-2">Why Coding?</button>
-         </div>
-       <hr />
-         <div>
-           <h5 class="text-dark text-center mb-4">Contact</h5>
-           <p class=" bi bi-geo-fill">Reumannplatz 1/12 1100, Vienna</p>
-           <p><a href="tel:+436705532234" class="bi-phone text-primary text-decoration-none"> +43 670 553 22 34</a></p>
-           <p><a href="mailto:ellieghn@gmail.com" class="bi bi-envelope-at text-primary text-decoration-none"> ellieghn@gmail.com</a></p>
-           <p><a href="https://github.com/ElenaGhn?tab=repositories" class="bi bi-github  text-primary text-decoration-none" target="_blank"> Github repositories</a></p>
-           <p>Born: 14.07.1998</p>
-           <p>Nationality: Romanian</p>
-         </div>
-       <hr />
-         <div>
           <div>
-            <h5 class="text-dark text-center mb-4">Languages</h5>
-             <ul class="list-group ms-4">
-               <li>Romanian: Mother tongue</li>
-               <li>German: B2</li>
-               <li>English: B1</li>
-               <li>Russian: B1</li>
-             </ul>
-            </div>
-         </div>
-      </div>
-
-   <!--acordion-->
-
-     <div class="accordion" id="accordionExample">
-         <div class="accordion-item">
-            <h2 class="accordion-header" id="programmingSkilssHeading">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                PROGRAMMING SKILLS</button>
-            </h2>
-             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-               <div class="accordion-body">
-                 <ul class="list-group ms-4">
-                   <li>HTML5</li>
-                   <li>CSS3</li>
-                   <li>Bootstrap5</li>
-                   <li>JavaScript</li>
-                   <li>Git</li>
-                  <li>Visual Studio Code</li>
-                 </ul>
-                  <p> &nbsp;<a href="https://github.com/ElenaGhn?tab=repositories" class="bi bi-github  text-primary text-decoration-none" target="_blank">  &nbsp; 
-                 Github repositories</a></p>
-               </div>
-             </div>
-         </div>
-         <div class="accordion-item">
-           <h2 class="accordion-header" id="professionalExperienceHeading">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              PROFESSIONAL EXPERIENCE</button>
-           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-           <div class="accordion-body">
-             <p><strong>2021-2022:</strong> Steward on Train (Newrest Wagons Lits Austria, 1150 Vienna)</p>
-             <p><strong>2019:</strong> Cleaning staff ("Gemeinsam Leben” Kolpinghaus, 1100 Vienna)</p>
-             <p><strong>2018-2019:</strong> Waitress & Barman at ́́Azalia Hotel in Cahul, Moldova</p>
-             <p><strong>2015-2018:</strong> Kitchen help and Cook Inside the Fourchette Supermarket in Cahul in the restaurant area</p>
-           </div>
+            <h5 class="text-dark mb-4">Languages</h5>
+            <ul class="list-unstyled">
+              <li>Romanian: Mother tongue</li>
+              <li>German: B2</li>
+              <li>English: B1</li>
+              <li>Russian: B1</li>
+            </ul>
           </div>
-         </div>
-       <div class="accordion-item">
-         <h2 class="accordion-header" id="educationalBackgroundHeading">
-           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            EDUCATIONAL BACKGROUND</button></h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p><strong>12.2022:</strong> JavaScript Basic Course (Code Factory Vienna)</p>
-            <p><strong>2015-2016:</strong> Trained as a cook in Cahul, Moldova</p>
-            <p><strong>2007-2015:</strong> Elementary and secondary school in Colibasi, Moldova</p>
+        </aside>
+        <!--main section-->
+        <main class="col-md-6 col-lg-9">
+          <h1 class="text-center mt-5">
+            <strong>Elena Ghencea</strong>
+          </h1>
+          <h5 class="text-center text-secondary mt-5">
+            Junior Software Developer
+          </h5>
+          <h5 class="text-center text-secondary mb-4">
+            (Learning in Progress)
+          </h5>
+          <!--responsive contact-->
+          <div class="d-block d-md-none ps-2 mb-3">
+            <div class="text-center mb-3">
+              <a
+                class="btn btn-outline-secondary mx-2 my-1"
+                href="assets/Lebenslauf_Elena.pdf"
+                target="_blank"
+                >Pdf Download</a
+              >
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-secondary my-1"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Why Coding?
+              </button>
+            </div>
+            <hr />
+            <div>
+              <h5 class="text-dark text-center mb-4">Contact</h5>
+              <p class="bi bi-geo-fill">
+                Reumannplatz 1/12 1100, Vienna
+              </p>
+              <p>
+                <a
+                  href="tel:+436705532234"
+                  class="bi-phone text-primary text-decoration-none"
+                >
+                  +43 670 553 22 34</a
+                >
+              </p>
+              <p>
+                <a
+                  href="mailto:ellieghn@gmail.com"
+                  class="bi bi-envelope-at text-primary text-decoration-none"
+                >
+                  ellieghn@gmail.com</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://github.com/ElenaGhn?tab=repositories"
+                  class="bi bi-github text-primary text-decoration-none"
+                  target="_blank"
+                >
+                  Github repositories</a
+                >
+              </p>
+              <p>Born: 14.07.1998</p>
+              <p>Nationality: Romanian</p>
+            </div>
+            <hr />
+            <div>
+              <div>
+                <h5 class="text-dark text-center mb-4">Languages</h5>
+                <ul class="list-group ms-4">
+                  <li>Romanian: Mother tongue</li>
+                  <li>German: B2</li>
+                  <li>English: B1</li>
+                  <li>Russian: B1</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--acordion-->
+
+          <div class="accordion" id="mainAccordion">
+            <div class="accordion-item">
+              <h2
+                class="accordion-header"
+                id="programmingSkilssCollapse"
+              >
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#programmingSkillsContent"
+                  aria-expanded="true"
+                  aria-controls="programmingSkillsContent"
+                >
+                  PROGRAMMING SKILLS
+                </button>
+              </h2>
+              <div
+                id="programmingSkillsContent"
+                class="accordion-collapse collapse show"
+                aria-labelledby="programmingSkillsHeading"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  <ul class="list-group ms-4">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Bootstrap5</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>Visual Studio Code</li>
+                  </ul>
+                  <p>
+                    &nbsp;<a
+                      href="https://github.com/ElenaGhn?tab=repositories"
+                      class="bi bi-github text-primary text-decoration-none"
+                      target="_blank"
+                    >
+                      &nbsp; Github repositories</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2
+                class="accordion-header"
+                id="professionalExperienceCollapse"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#professionalExperienceContent"
+                  aria-expanded="false"
+                  aria-controls="professionalExperienceContent"
+                >
+                  PROFESSIONAL EXPERIENCE
+                </button>
+              </h2>
+              <div
+                id="professionalExperienceContent"
+                class="accordion-collapse collapse"
+                aria-labelledby="professionalExperienceHeading"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <strong>2021-2022:</strong> Steward on Train
+                    (Newrest Wagons Lits Austria, 1150 Vienna)
+                  </p>
+                  <p>
+                    <strong>2019:</strong> Cleaning staff ("Gemeinsam
+                    Leben” Kolpinghaus, 1100 Vienna)
+                  </p>
+                  <p>
+                    <strong>2018-2019:</strong> Waitress & Barman at
+                    ́́Azalia Hotel in Cahul, Moldova
+                  </p>
+                  <p>
+                    <strong>2015-2018:</strong> Kitchen help and Cook
+                    Inside the Fourchette Supermarket in Cahul in the
+                    restaurant area
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2
+                class="accordion-header"
+                id="educationalBackgroundCollapse"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#educationalBackgroundContent"
+                  aria-expanded="false"
+                  aria-controls="educationalBackgroundContent"
+                >
+                  EDUCATIONAL BACKGROUND
+                </button>
+              </h2>
+              <div
+                id="educationalBackgroundContent"
+                class="accordion-collapse collapse"
+                aria-labelledby="educationalBackgroundHeading"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <strong>12.2022:</strong> JavaScript Basic Course
+                    (Code Factory Vienna)
+                  </p>
+                  <p>
+                    <strong>2015-2016:</strong> Trained as a cook in
+                    Cahul, Moldova
+                  </p>
+                  <p>
+                    <strong>2007-2015:</strong> Elementary and
+                    secondary school in Colibasi, Moldova
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="softSkillsCollapse">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#softSkillsContent"
+                  aria-expanded="false"
+                  aria-controls="softSkillsContent"
+                >
+                  SOFT SKILLS
+                </button>
+              </h2>
+              <div
+                id="softSkillsContent"
+                class="accordion-collapse collapse"
+                aria-labelledby="softSkillsHeading"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Very good organization’s skills and efficiency
+                  </p>
+                  <p>Flexibility and adaptability</p>
+                  <p>Communication’s ease</p>
+                  <p>Teamwork skills</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="hobbiesCollapse">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#hobbiesContent"
+                  aria-expanded="false"
+                  aria-controls="hobbiesContent"
+                >
+                  HOBBIES
+                </button>
+              </h2>
+              <div
+                id="hobbiesContent"
+                class="accordion-collapse collapse"
+                aria-labelledby="hobbiesHeading"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  <p>Taking care of Animals</p>
+                  <p>Reading (Literature in German, English)</p>
+                  <p>Listening to music</p>
+                  <p>Learning how to code</p>
+                  <p>Board Games</p>
+                  <p>Sewing</p>
+                  <p>Travel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Modal title
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              I'm excited about the idea of being a Software Developer
+              because I will have the opportunity to use my creative
+              and problem-solving skills. I enjoy fixing and creating
+              solutions to the users problems. This passion and
+              enthusiasm will serve me well in my journey as a
+              software developer. As I continue to learn and grow in
+              my future career, I will have the opportunity to help
+              others by creating useful and impactful thing with the
+              power of technology.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <p>
+              <i class="bi bi-emoji-heart-eyes"></i>
+            </p>
           </div>
         </div>
-       </div>
-     <div class="accordion-item">
-       <h2 class="accordion-header" id="softSkillsHeading">
-       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-        SOFT SKILLS</button></h2>
-      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-       <div class="accordion-body">
-         <p>Very good organization’s skills and efficiency</p>
-         <p>Flexibility and adaptability</p>
-         <p>Communication’s ease</p>
-         <p>Teamwork skills</p>
-       </div>
       </div>
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="hobbiesHeading">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-        HOBBIES</button></h2>
-     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <p>Taking care of Animals</p>
-        <p>Reading (Literature in German, English)</p>
-        <p>Listening to music</p>
-        <p>Learning how to code</p>
-        <p>Board Games</p>
-        <p>Sewing</p>
-        <p>Travel</p>
-      </div>
-     </div>
-    </div>
-  </div>
-  </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
-
-
