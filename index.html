@@ -90,16 +90,32 @@
                   <a
                     class="nav-link"
                     href="#educationalBackgroundCollapse"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#educationalBackgroundContent"
+                    aria-expanded="false"
+                    aria-controls="educationalBackgroundContent"
                     >EDUCATIONAL BACKGROUND</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#softSkillsHeading"
+                  <a
+                    class="nav-link"
+                    href="#softSkillsCollapse"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#softSkillsContent"
+                    aria-expanded="false"
+                    aria-controls="softSkillsContent"
                     >SOFT SKILLS</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#hobbiesHeading"
+                  <a
+                    class="nav-link"
+                    href="#hobbiesCollapse"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hobbiesContent"
+                    aria-expanded="false"
+                    aria-controls="hobbiesContent"
                     >HOBBIES</a
                   >
                 </li>
@@ -267,7 +283,7 @@
 
           <!--acordion-->
 
-          <div class="accordion" id="accordionExample">
+          <div class="accordion" id="mainAccordion">
             <div class="accordion-item">
               <h2
                 class="accordion-header"
@@ -288,7 +304,7 @@
                 id="programmingSkillsContent"
                 class="accordion-collapse collapse show"
                 aria-labelledby="programmingSkillsHeading"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#mainAccordion"
               >
                 <div class="accordion-body">
                   <ul class="list-group ms-4">
@@ -331,7 +347,7 @@
                 id="professionalExperienceContent"
                 class="accordion-collapse collapse"
                 aria-labelledby="professionalExperienceHeading"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#mainAccordion"
               >
                 <div class="accordion-body">
                   <p>
@@ -363,18 +379,18 @@
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#professionalExperienceContent"
+                  data-bs-target="#educationalBackgroundContent"
                   aria-expanded="false"
-                  aria-controls="professionalExperienceContent"
+                  aria-controls="educationalBackgroundContent"
                 >
                   EDUCATIONAL BACKGROUND
                 </button>
               </h2>
               <div
-                id="professionalExperienceContent"
+                id="educationalBackgroundContent"
                 class="accordion-collapse collapse"
                 aria-labelledby="educationalBackgroundHeading"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#mainAccordion"
               >
                 <div class="accordion-body">
                   <p>
@@ -393,23 +409,23 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="softSkillsHeading">
+              <h2 class="accordion-header" id="softSkillsCollapse">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
+                  data-bs-target="#softSkillsContent"
                   aria-expanded="false"
-                  aria-controls="collapseFour"
+                  aria-controls="softSkillsContent"
                 >
                   SOFT SKILLS
                 </button>
               </h2>
               <div
-                id="collapseFour"
+                id="softSkillsContent"
                 class="accordion-collapse collapse"
-                aria-labelledby="headingFour"
-                data-bs-parent="#accordionExample"
+                aria-labelledby="softSkillsHeading"
+                data-bs-parent="#mainAccordion"
               >
                 <div class="accordion-body">
                   <p>
@@ -422,23 +438,23 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="hobbiesHeading">
+              <h2 class="accordion-header" id="hobbiesCollapse">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive"
+                  data-bs-target="#hobbiesContent"
                   aria-expanded="false"
-                  aria-controls="collapseFive"
+                  aria-controls="hobbiesContent"
                 >
                   HOBBIES
                 </button>
               </h2>
               <div
-                id="collapseFive"
+                id="hobbiesContent"
                 class="accordion-collapse collapse"
-                aria-labelledby="headingFive"
-                data-bs-parent="#accordionExample"
+                aria-labelledby="hobbiesHeading"
+                data-bs-parent="#mainAccordion"
               >
                 <div class="accordion-body">
                   <p>Taking care of Animals</p>
